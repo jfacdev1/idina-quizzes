@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>French Nature Interactive Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>French Nature Interactive Learning</h1>
+    <nav>
+      <button onclick="showSection('lessons')">Lessons</button>
+      <button onclick="showSection('quiz')">Quiz</button>
+    </nav>
+  </header>
+  <main>
+    <section id="lessons" class="active">
+      <h2>Lessons</h2>
+      <div id="lesson-content"></div>
+    </section>
+    <section id="quiz">
+      <h2>Quiz</h2>
+      <form id="quiz-form"></form>
+      <div id="quiz-result"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Sources: <span>[i] PDF, [j] Markdown</span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
