@@ -30,5 +30,18 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.input-blank').forEach(input => {
     input.setAttribute('placeholder', 'Réponse...');
     input.setAttribute('title', 'Entrez votre réponse ici');
+    input.setAttribute('aria-label', 'Zone de réponse');
+  });
+
+  // Désactiver les boutons "Vérifier" jusqu'à ce que toutes les réponses soient remplies
+  document.querySelectorAll('.exercise').forEach(exercise => {
+    const button = exercise.querySelector('.check-btn');
+    button.disabled = true;
+    const inputs = exercise.querySelectorAll('.input-blank');
+    const toggleButtonState = () => {
+      const allFilled = Array.from(inputs).every(inp => inp.value.trim() !== '');
+      button.disabled = !allFilled;
+    };
+    inputs.forEach(inp => inp.addEventListener('input', toggleButtonState));
   });
 });

@@ -6,6 +6,7 @@
   <title>Leçon 1 : Chapitre Un - French Nature Interactive Learning</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="lesson1.css">
+  <script src="lesson1.js" defer></script>
 </head>
 <body>
   <header>
@@ -15,9 +16,9 @@
     </nav>
   </header>
   <main>
-    <div id="lesson-content" class="card">
-      <img src="https://i.ibb.co/7x9vKb1n/Screenshot-From-2025-07-22-09-19-26.png" alt="Screenshot-From-2025-07-22-09-19-26" border="0">
-      <h3>Les Duclos</h3>
+    <article id="lesson-content" class="card">
+      <img src="https://i.ibb.co/7x9vKb1n/Screenshot-From-2025-07-22-09-19-26.png" alt="Illustration des personnages de la famille Duclos, avec Jean, Henri, Nicole, Yvonne, Monsieur et Madame Duclos, ainsi que leurs animaux de compagnie, Minet le chat et Médor et Fido les chiens" loading="lazy" width="600" height="338">
+      <h2>Les Duclos</h2>
       <ul>
         <li>Jean est un garçon.</li>
         <li>Henri est un garçon.</li>
@@ -32,7 +33,7 @@
         <li>Fido est aussi un chien.</li>
         <li>Médor et Fido sont deux chiens.</li>
       </ul>
-      <h4>Exercices</h4>
+      <h3>Exercices</h3>
       <div class="exercises">
         <div class="exercise" id="exercise-a">
           <strong>Exercice A</strong>
@@ -44,7 +45,7 @@
             <li><span>Madame Duclos est la </span><input type="text" class="input-blank" data-answer="mère"> de Jean, d’Henri, de Nicole et d’Yvonne.</li>
           </ul>
           <button onclick="checkExercise('exercise-a')" class="check-btn">Vérifier</button>
-          <div class="result" id="result-exercise-a"></div>
+          <div class="result" id="result-exercise-a" aria-live="polite"></div>
         </div>
         <div class="exercise" id="exercise-b">
           <strong>Exercice B</strong>
@@ -60,17 +61,15 @@
             <li>Nicole et Yvonne, ont-elles deux sœurs? <input type="text" class="input-blank" data-answer="non"></li>
           </ul>
           <button onclick="checkExercise('exercise-b')" class="check-btn">Vérifier</button>
-          <div class="result" id="result-exercise-b"></div>
+          <div class="result" id="result-exercise-b" aria-live="polite"></div>
         </div>
       </div>
-      <h4>Mots clés</h4>
+      <h3>Mots clés</h3>
       <p>Monsieur, Madame, est, sont, un, une, un homme, une femme, un garçon, une fille, et, aussi, un chat, un chien, ce, est-ce ...?, sont-ce ...?, oui, non, le, la, les, qui ...?, a, ont, de, d’, un père, une mère, un fils, une fille, il, ils, elle, elles, a-t-il ...?, a-t-elle ...?, ont-ils ...?, ont-elles ...?, un frère, une sœur</p>
       <p><em>Source: Chapitre 1, Le Français par la Méthode Nature [i]</em></p>
-    </div>
+    </article>
   </main>
   <footer>
     <p>Sources: <span>[i] PDF, [j] Markdown</span></p>
-  <footer>
-    <p>Sources: <span>[i] PDF, [j] Markdown</span></p>
   </footer>
-  <script src="lesson1.js"></script>
+
