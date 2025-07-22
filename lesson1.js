@@ -42,6 +42,11 @@ window.addEventListener('DOMContentLoaded', () => {
       const allFilled = Array.from(inputs).every(inp => inp.value.trim() !== '');
       button.disabled = !allFilled;
     };
-    inputs.forEach(inp => inp.addEventListener('input', toggleButtonState));
+    // Escuchar múltiples eventos para mejor compatibilidad móvil
+    ['input', 'keyup', 'change'].forEach(evt => {
+      inputs.forEach(inp => inp.addEventListener(evt, toggleButtonState));
+    });
+    // Ejecutar una comprobación inicial (útil para autocompletado móvil)
+    toggleButtonState();
   });
 });
