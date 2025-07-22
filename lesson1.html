@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 1 : Chapitre Un - French Nature Interactive Learning</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lesson1.css">
+</head>
+<body>
+  <header>
+    <h1>Leçon 1 : Chapitre Un</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Accueil</a>
+    </nav>
+  </header>
+  <main>
+    <div id="lesson-content" class="card">
+      <h3>Les Duclos</h3>
+      <ul>
+        <li>Jean est un garçon.</li>
+        <li>Henri est un garçon.</li>
+        <li>Jean et Henri sont deux garçons.</li>
+        <li>Nicole est une fille.</li>
+        <li>Yvonne est une fille.</li>
+        <li>Nicole et Yvonne sont deux filles.</li>
+        <li>Monsieur Duclos est un homme.</li>
+        <li>Madame Duclos est une femme.</li>
+        <li>Minet est un chat.</li>
+        <li>Médor est un chien.</li>
+        <li>Fido est aussi un chien.</li>
+        <li>Médor et Fido sont deux chiens.</li>
+      </ul>
+      <h4>Exercices</h4>
+      <div class="exercises">
+        <div class="exercise" id="exercise-a">
+          <strong>Exercice A</strong>
+          <ul>
+            <li><span>Monsieur Duclos est un </span><input type="text" class="input-blank" data-answer="homme">. <span>Madame Duclos est une </span><input type="text" class="input-blank" data-answer="femme">.</li>
+            <li><span>Jean et Henri sont deux </span><input type="text" class="input-blank" data-answer="garçons">. <span>Nicole et Yvonne sont deux </span><input type="text" class="input-blank" data-answer="filles">.</li>
+            <li><span>Médor est le chien </span><input type="text" class="input-blank" data-answer="de"> Jean, <span>Minet est le chat </span><input type="text" class="input-blank" data-answer="d'"> Yvonne.</li>
+            <li><span>Monsieur Duclos est le </span><input type="text" class="input-blank" data-answer="père"> de Jean, d’Henri, de Nicole et d’Yvonne.</li>
+            <li><span>Madame Duclos est la </span><input type="text" class="input-blank" data-answer="mère"> de Jean, d’Henri, de Nicole et d’Yvonne.</li>
+          </ul>
+          <button onclick="checkExercise('exercise-a')" class="check-btn">Vérifier</button>
+          <div class="result" id="result-exercise-a"></div>
+        </div>
+        <div class="exercise" id="exercise-b">
+          <strong>Exercice B</strong>
+          <ul>
+            <li>Jean, est-ce un garçon? <input type="text" class="input-blank" data-answer="oui"></li>
+            <li>Henri, a-t-il un frère? <input type="text" class="input-blank" data-answer="oui"></li>
+            <li>Qui est le père de Jean? <input type="text" class="input-blank" data-answer="Monsieur Duclos"></li>
+            <li>Nicole, est-ce un garçon? <input type="text" class="input-blank" data-answer="non"></li>
+            <li>Yvonne, a-t-elle une sœur? <input type="text" class="input-blank" data-answer="oui"></li>
+            <li>Qui est la sœur d'Yvonne? <input type="text" class="input-blank" data-answer="Nicole"></li>
+            <li>Qui sont le père et la mère? <input type="text" class="input-blank" data-answer="Monsieur et Madame Duclos"></li>
+            <li>Ont-ils deux fils? <input type="text" class="input-blank" data-answer="oui"></li>
+            <li>Nicole et Yvonne, ont-elles deux sœurs? <input type="text" class="input-blank" data-answer="non"></li>
+          </ul>
+          <button onclick="checkExercise('exercise-b')" class="check-btn">Vérifier</button>
+          <div class="result" id="result-exercise-b"></div>
+        </div>
+      </div>
+      <h4>Mots clés</h4>
+      <p>Monsieur, Madame, est, sont, un, une, un homme, une femme, un garçon, une fille, et, aussi, un chat, un chien, ce, est-ce ...?, sont-ce ...?, oui, non, le, la, les, qui ...?, a, ont, de, d’, un père, une mère, un fils, une fille, il, ils, elle, elles, a-t-il ...?, a-t-elle ...?, ont-ils ...?, ont-elles ...?, un frère, une sœur</p>
+      <p><em>Source: Chapitre 1, Le Français par la Méthode Nature [i]</em></p>
+    </div>
+  </main>
+  <footer>
+    <p>Sources: <span>[i] PDF, [j] Markdown</span></p>
+  <footer>
+    <p>Sources: <span>[i] PDF, [j] Markdown</span></p>
+  </footer>
+  <script src="lesson1.js"></script>
