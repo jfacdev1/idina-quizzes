@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="lesson1.css">
   <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="lightbox.css">
   <script src="lesson1.js" defer></script>
+  <script src="lightbox.js" defer></script>
 </head>
 <body>
   <header>
@@ -79,6 +81,9 @@
       <p><em>Source: Chapitre 1, Le Français par la Méthode Nature [i]</em></p>
     </article>
   </main>
+  <div id="lightbox" class="lightbox hidden" tabindex="-1" aria-label="Vista ampliada de imagen">
+    <img src="" alt="Imagen ampliada">
+  </div>
   <footer>
     <p>Sources: <span>[i] PDF, [j] Markdown</span></p>
   </footer>
